@@ -40,7 +40,7 @@ def detail_milestones(id):
     cur.close()
 
     if not data:
-        return jsonify({'message': 'Mahasiswa tidak ditemukan'}), 404
+        return jsonify({'message': 'Data tidak ditemukan'}), 404
 
     milestones_list = []
     for milestones in data:
